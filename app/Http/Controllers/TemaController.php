@@ -16,7 +16,7 @@ class TemaController extends Controller
      */
     public function index()
     {
-        $temas = Tema::paginate(3); // Obtén 10 temas por página
+        $temas = Tema::paginate(3);
 
         return view("temas.index", [
             "temas" => $temas,
